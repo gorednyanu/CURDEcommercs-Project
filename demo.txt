@@ -1,0 +1,14 @@
+mongodb url = mongodb+srv://admin-1234:admin-1234@usercluster.ygl3d.mongodb.net/e-commerce?
+retryWrites=true&w=majority
+database = e-commerce
+
+collection = product
+
+
+name:"shirt1"
+barnd:"polo"
+rating:2.3
+numReviwes:10
+image:"https://mernclassbucket.s3.us-east-2.amazonaws.com/p1.jpg"
+description:"This shirt is cotton shirt "
+
