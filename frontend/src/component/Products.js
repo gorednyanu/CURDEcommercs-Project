@@ -13,8 +13,7 @@ function Products(props) {
                         </Link>
                         <div className="card-body">
                             <h2>{prod.name}</h2>
-                            <Rating rating={prod.rating}></Rating>
-                            <h3> numReviews : {prod.numReviews}</h3>
+                            <Rating rating={prod.rating} numReviews={prod.numReviews}></Rating>
                             <div className="price">
                                 Price ${prod.cost}
                             </div>

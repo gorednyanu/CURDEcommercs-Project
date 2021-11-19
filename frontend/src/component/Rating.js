@@ -1,7 +1,7 @@
 import React from "react";
 import './Rating.css';
 function Rating(props) {
-    const { rating } = props;
+    const {rating,numReviews} = props;
     return (
         <React.Fragment>
             <div className="rating">
@@ -35,7 +35,7 @@ function Rating(props) {
                             'fa fa-star-o'}></i>
                 </span>
                 <span>
-                    {/* {numReviews} Reviews */}
+                    {numReviews} Reviews
                 </span>
             </div>
         </React.Fragment>

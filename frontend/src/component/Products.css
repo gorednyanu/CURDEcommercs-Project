@@ -31,7 +31,7 @@ img.medium {
 .card {
   border: 0.1rem #c0c0c0 solid;
   background-color: #f8f8f8;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   margin: 1rem;
 }
 .card-body {
@@ -41,9 +41,7 @@ img.medium {
   margin-bottom: 0.5rem;
 }
 .price {
-  font-size: 3rem;
-  color:rgb(255, 0, 0);
-    
+  font-size: 2rem;
 }  
 h2{
   color: rgb(216, 20, 101);

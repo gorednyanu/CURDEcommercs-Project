@@ -1,27 +1,36 @@
 .row.start{
-    align-items: flex-start;
-  }
+  align-items: flex-start;
+}
   
-  .col-2{
-    flex: 2 1 50rem;
-  }
+.col-2{
+  flex: 2 1 50rem;
+}
   
-  .col-1{
-    flex: 1 1 25rem;
-  }
+.col-1{
+  flex: 1 1 25rem;
+  align-items: flex-end;
+}
   
-  img.large{
-    width: 100%;
-  }
+img.large{
+ width: 100%;
+}
   
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
   
-  ul{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
-  
-  li{
-    margin-top: 1rem;
-  }
-  
+li{
+  margin-top: 1rem;
+}
+
+.success {
+  color: #008000 ;
+  font-weight: bold;
+}
+.danger {
+  color: #800008;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
