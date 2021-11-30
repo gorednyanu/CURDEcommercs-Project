@@ -5,6 +5,7 @@ import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/DetailsScreen';
 import CartScreen from './screens/CartScreen';
 import { useDispatch, useSelector } from 'react-redux';
+import registerScreen from './screens/registionScreen';
 
 
 
@@ -25,7 +26,7 @@ function App() {
         <div className="grid-container">
           <header className="row">
             <div>
-              <NavLink to="/" className="brand" exact={true} strict>रुबाब कलेक्शन</NavLink>
+              <NavLink to="/" className="brand" exact={true} strict>रुबाब कलेक्शन E-Shop</NavLink>
             </div>
             <div>
               <NavLink to="/cart" exact={true} strict><i className="fa fa-shopping-cart"></i>
@@ -40,6 +41,7 @@ function App() {
               <Route path='/' component={HomeScreen} exact={true} strict></Route>
               <Route path="/details/:id" component={DetailsScreen} exact={true} strict></Route>
               <Route path= "/cart/:id?" component={CartScreen} exact={true} strict ></Route>
+              <Route path="/register" component={registerScreen} exact={true} strict></Route>
           </main>
           <footer className="row center">
             copyright@ashokit.in

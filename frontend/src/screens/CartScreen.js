@@ -21,7 +21,7 @@ export default function CartScreen(props) {
         dispatch(removeItemCart(id));
     }
     const checkoutHandler =()=>{
-        console.log()
+        props.history.push("/register")
     }
 
     return (
