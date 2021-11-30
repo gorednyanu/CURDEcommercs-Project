@@ -8,10 +8,12 @@ import { applyMiddleware, createStore, combineReducers } from 'redux';
 import { ProductReducre } from './reducer/productReducer';
 import thunk from "redux-thunk";
 import DetailsReducer from './reducer/DetailsReducer';
+import {CartReducer} from './reducer/cartReducer';
 
 const rootReducer = combineReducers({
 "products": ProductReducre,
-"details":DetailsReducer
+"details":DetailsReducer,
+"cart": CartReducer,
 });
 const store = createStore(rootReducer,applyMiddleware(thunk));
 ReactDOM.render(

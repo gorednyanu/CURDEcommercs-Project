@@ -17,6 +17,10 @@ function DetailsScreen(props) {
         dispatch(DetailsAction(id))
     }, [dispatch]);
 
+    const addToCartHandler = ()=>{
+        props.history.push(`/cart/${id}?qty=${qty}`);
+    }
+
     return (
         <React.Fragment>
             {!loading ? <LoadingBox></LoadingBox> : error === "Network Error" ? <MessageBox variant="danger">{error}</MessageBox> : (<div>
@@ -80,7 +84,7 @@ function DetailsScreen(props) {
                                         </div>
                                     </li>
                                     <li>
-                                        <button>Add to Cart</button>
+                                        <button className="primary block" onClick={addToCartHandler}>Add to Cart</button>
                                     </li>
                                  </>)}
                             </ul>
